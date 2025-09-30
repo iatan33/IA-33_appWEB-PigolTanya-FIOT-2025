@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8" />
+    <title>МедЕтос</title>
+    <style>
+        header {
+            background-color: #5b0404;
+            display: flex;
+            justify-content: space-between;
+        }
+        footer {
+            background-color: #5b0404;
+            display: flex;
+            justify-content: space-around;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <img src="3653045.png" width="80" height="80" style="background-color: white">
+    <a href="mailto:pigol.tanya@lll.kpi.ua">Зв'язатися з нами</a>
+</header>
+<main>
+<h1>Клініка МедЕтос</h1>
+<h3>Про нас</h3>
+<img
+        src="IMG_0196.PNG"
+        alt="Наша клініка"
+        width="853"
+        height="569"
+/>
+<h2>Розклад роботи</h2>
+<table>
+    <thead>
+    <tr>
+        <th>День тижня</th>
+        <th>Години роботи</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>Понеділок</td>
+        <td>8:00 - 21:00</td>
+    </tr>
+    <tr>
+        <td>Вівторок</td>
+        <td>8:00 - 21:00</td>
+    </tr>
+    <tr>
+        <td>Середа</td>
+        <td>8:00 - 21:00</td>
+    </tr>
+    <tr>
+        <td>Четвер</td>
+        <td>8:00 - 21:00</td>
+    </tr>
+    <tr>
+        <td>П'ятниця</td>
+        <td>8:00 - 21:00</td>
+    </tr>
+    <tr>
+        <td>Субота</td>
+        <td>9:00 - 20:00</td>
+    </tr>
+    <tr>
+        <td>Неділя</td>
+        <td>9:00 - 20:00</td>
+    </tr>
+    </tbody>
+</table>
+
+<h3>Наші послуги</h3>
+<ul>
+    <li>Консультація лікарів</li>
+    <li>Діагностика захворювань</li>
+    <li>Профілактичні огляди</li>
+    <li>Вакцинація</li>
+    <li>Лабораторні дослідження</li>
+    <li>Денний стаціонар</li>
+</ul>
+
+<h3>Наші лікарі</h3>
+<ol>
+    <li>Кальченко Д.П</li>
+    <li>Руднєва М.М.</li>
+    <li>Марчкнко М.М.</li>
+</ol>
+
+<form action="/submit-form" method="post">
+    <h2>Оформити запис</h2>
+
+    <label for="name">Ваше ім'я:</label><br>
+    <input type="text" id="name" name="user_name"><br><br>
+
+    <label for="name">Ваше прізвище:</label><br>
+    <input type="text" id="surname" name="user_surname"><br><br>
+
+    <label for="email">Електронна пошта:</label><br>
+    <input type="email" id="email" name="user_email"><br><br>
+
+    <label for="message">Ваша проблема:</label><br>
+    <textarea id="message" name="user_message" rows="4" cols="50"></textarea><br><br>
+
+    <label for="doctor_specialty">Виберіть спеціаліста:</label>
+    <select id="doctor_specialty" name="doctor_specialty">
+        <option value="">Будь ласка, оберіть</option>
+        <option value="therapist">Терапевт</option>
+        <option value="dentist">Стоматолог</option>
+        <option value="pediatrician">Педіатр</option>
+        <option value="surgeon">Хірург</option>
+    </select><br><br>
+
+    <label>Чи бажаєте отримати нагадування про запис?</label><br>
+    <input type="checkbox" id="yes" name="subscribe" value="yes">
+    <label for="yes">Так</label><br>
+    <input type="checkbox" id="no" name="subscribe" value="no">
+    <label for="no">Ні</label><br><br>
+
+    <input type="submit" value="Підтвердити запис">
+</form><br><br>
+<a href="doc.html">Опис бізнес-логіки</a>
+</main>
+<footer>
+    <a href="https://www.instagram.com/">Instagam</a>
+    <a href="https://www.facebook.com/">Facebook</a>
+</footer>
+</body>
+</html>
